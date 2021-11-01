@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>
+    <!-- <link rel="stylesheet" href="bootstrap4.6" -->
+    <title>Reto</title>
+</head>
+<body>
+    <h1>Reto 3 y 4</h1>
+    <h1>Categorias</h1>
+    <div id="resultado1"></div>
+    <button onclick="traerInformacionCategorias()">Consultar Categorias</button>
+    
+    <div>
+        <input type="text" id="Cname" placeholder="name">
+        <input type="text" id="Cdescription" placeholder="description">
+        
+    </div>
+    <button onclick="guardarInformacionCategorias()">Guardar Categorias</button>
+
+
+    
+    <h1>Palcos</h1>
+    <div id="resultado2"></div>
+    <button onclick="traerInformacionPalcos()" >Consultar Palcos</button>
+    
+    <div>
+        <input type="text" id="Pname" placeholder="name">
+        <input type="text" id="Plocation" placeholder="location">
+        <input type="number" id="Pcapacity" placeholder="capacity">
+        <input type="text" id="Pdescription" placeholder="description">
+        <select name="category" id="Pcategory" placeholder="category_id">
+        </select>
+    </div>
+    <button onclick="guardarInformacionPalcos()">Guardar Palcos</button>
+
+
+
+    <h1>Cliente</h1>
+    <div id="resultado3"></div>
+    <button onclick="traerInformacionClientes()" >Consultar Clientes</button>
+    
+    <div>
+        <input type="text" id="Clemail" placeholder="email">
+        <input type="text" id="Clpassword" placeholder="password">
+        <input type="text" id="Clname" placeholder="name">
+        <input type="text" id="Clage" placeholder="age">
+        <select name="category" id="Clcategory" placeholder="category_id">
+        </select>
+    </div>
+    <button onclick="guardarInformacionClientes()">Guardar Clientes</button>
+
+
+    <!-- <select name="datas" id="datas">
+        <option value="1">Name</option> -->
+
+    </select>
+</body>
+</html>
+
